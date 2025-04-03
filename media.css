@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+	.firstPart {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	nav {
+		margin-top: -40px;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+	nav ul li {
+		padding: 30px;
+	}
+	.avatar {
+		width: 10rem;
+	}
+	.logo {
+		margin-left: 30px;
+	}
+	.avatarAndText {
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+	header {
+		padding-bottom: 2rem;
+	}
+	.secondPart {
+		margin-top: 5rem;
+	}
+}
