@@ -18,8 +18,39 @@ body {
 	margin: 0;
 	padding: 0;
 }
-body {
-	margin: 0;
+
+header {
+	/*media querry plus flex direction column + space between qui sépare le bloc image du bloc nav*/
+	display: flex;
+	background-color: var(--purple);
+	width: 100%;
+	color: var(--white);
+	padding-top: 15px;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	color: var(--purple);
 }
 
 .logo {
@@ -35,43 +66,9 @@ body {
 	align-self: center;
 }
 
-header {
-	/*media querry plus flex direction column + space between qui sépare le bloc image du bloc nav*/
-	display: flex;
-	background-color: var(--purple);
-	width: 100%;
-	color: var(--white);
-	padding-top: 15px;
-	flex-direction: column;
-	align-items: center;
-}
-
 .avatarAndText {
 	display: flex;
 	flex-direction: column;
-}
-nav {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-}
-
-nav ul {
-	display: flex;
-	list-style: none;
-	justify-content: space-evenly;
-	padding: 0;
-}
-
-h1,
-h2,
-h3 {
-	font-family: "Montserrat", sans-serif;
-}
-
-h2 {
-	color: var(--purple);
 }
 
 p,
@@ -112,22 +109,16 @@ article {
 	object-fit: contain;
 }
 
+.text {
+	text-align: center;
+}
+
 .secondPart {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-footer {
-	background-color: var(--light-grey);
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-a {
-	color: var(--purple);
-	text-decoration: none;
-}
 .secPartParagraph {
 	width: 20rem;
 }
@@ -136,6 +127,14 @@ a {
 	margin-bottom: 50px;
 }
 
-.text {
+a {
+	color: var(--purple);
+	text-decoration: none;
+}
+
+footer {
+	background-color: var(--light-grey);
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 }
