@@ -10,13 +10,13 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html,
 body {
 	height: 100%;
-	margin: 0;
-	padding: 0;
 }
 
 header {
@@ -28,6 +28,7 @@ header {
 	padding-top: 15px;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 30px;
 }
 
 nav {
@@ -41,8 +42,12 @@ nav ul {
 	display: flex;
 	list-style: none;
 	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 10px;
 }
-
+h1 {
+	margin-bottom: 10px;
+}
 h1,
 h2,
 h3 {
@@ -51,11 +56,13 @@ h3 {
 
 h2 {
 	color: var(--purple);
+	margin-bottom: 15px;
 }
 
 .logo {
 	width: 50px;
 	align-self: center;
+	margin-bottom: 15px;
 }
 
 .avatar {
@@ -64,6 +71,7 @@ h2 {
 	border: solid 2.5px var(--white);
 	background-color: var(--white);
 	align-self: center;
+	margin-bottom: 10px;
 }
 
 .avatarAndText {
@@ -91,6 +99,7 @@ button {
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
+	margin-bottom: 30px;
 }
 
 article {
@@ -111,6 +120,7 @@ article {
 
 .text {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .secondPart {
@@ -127,6 +137,9 @@ article {
 	margin-bottom: 50px;
 }
 
+.footer-paragraph {
+	margin: 10px;
+}
 a {
 	color: var(--purple);
 	text-decoration: none;
